@@ -1,0 +1,2678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =====================================================
+         BASIC META
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Omor Faruk Al Rashid — Software Engineer, AI & Software Engineering Researcher, Founder.">
+
+    <meta name="keywords"
+          content="Omor Faruk Al Rashid, Software Engineer, AI Researcher, Software Engineering, Bangladesh">
+
+    <meta name="author"
+          content="Omor Faruk Al Rashid">
+
+    <meta name="theme-color"
+          content="#050816">
+
+    <title>
+        Omor Faruk Al Rashid | Software Engineer & Researcher
+    </title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+    <link rel="stylesheet"
+          href="css/animations.css">
+
+</head>
+
+
+<body data-theme="purple">
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div class="page-loader" id="pageLoader">
+
+        <div class="loader-content">
+
+            <div class="loader-logo">
+                OF
+            </div>
+
+            <div class="loader-progress">
+                <span></span>
+            </div>
+
+            <p>
+                INITIALIZING PORTFOLIO
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         THREE.JS BACKGROUND
+    ====================================================== -->
+
+    <canvas id="threeBackground"></canvas>
+
+
+    <!-- =====================================================
+         CUSTOM CURSOR
+    ====================================================== -->
+
+    <div class="cursor-dot"></div>
+
+    <div class="cursor-outline"></div>
+
+
+    <!-- =====================================================
+         MOBILE HEADER
+    ====================================================== -->
+
+    <header class="mobile-header">
+
+        <a href="#home"
+           class="mobile-logo">
+
+            <span class="logo-symbol">
+                OF
+            </span>
+
+            <span class="logo-text">
+
+                <strong>
+                    OMOR
+                </strong>
+
+                <small>
+                    SOFTWARE ENGINEER
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <button class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Open navigation">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN APPLICATION
+    ====================================================== -->
+
+    <div class="portfolio-app">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="sidebar"
+               id="sidebar">
+
+
+            <!-- SIDEBAR LOGO -->
+
+            <div class="sidebar-logo">
+
+                <a href="#home"
+                   class="logo-link">
+
+                    <span class="logo-symbol">
+                        OF
+                    </span>
+
+                    <span class="logo-text">
+
+                        <strong>
+                            OMOR
+                        </strong>
+
+                        <small>
+                            SOFTWARE ENGINEER
+                        </small>
+
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- SIDEBAR NAVIGATION -->
+
+            <nav class="sidebar-navigation"
+                 aria-label="Main navigation">
+
+
+                <a href="#home"
+                   class="sidebar-link active">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <span>
+                        Home
+                    </span>
+
+                </a>
+
+
+                <a href="#about"
+                   class="sidebar-link">
+
+                    <i class="fa-regular fa-user"></i>
+
+                    <span>
+                        About
+                    </span>
+
+                </a>
+
+
+                <a href="#projects"
+                   class="sidebar-link">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Projects
+                    </span>
+
+                </a>
+
+
+                <a href="#research"
+                   class="sidebar-link">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                    <span>
+                        Research
+                    </span>
+
+                </a>
+
+
+                <a href="#experience"
+                   class="sidebar-link">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Experience
+                    </span>
+
+                </a>
+
+
+                <a href="#skills"
+                   class="sidebar-link">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <span>
+                        Skills
+                    </span>
+
+                </a>
+
+
+                <a href="#certifications"
+                   class="sidebar-link">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Certificates
+                    </span>
+
+                </a>
+
+
+                <a href="#contact"
+                   class="sidebar-link">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <span>
+                        Contact
+                    </span>
+
+                </a>
+
+            </nav>
+
+
+
+            <!-- =================================================
+                 THEME SWITCHER
+            ================================================== -->
+
+            <div class="sidebar-theme">
+
+                <span class="theme-label">
+                    COLOR THEME
+                </span>
+
+
+                <div class="theme-options">
+
+                    <button class="theme-dot active"
+                            data-theme="purple"
+                            aria-label="Purple theme">
+                    </button>
+
+                    <button class="theme-dot"
+                            data-theme="blue"
+                            aria-label="Blue theme">
+                    </button>
+
+                    <button class="theme-dot"
+                            data-theme="cyan"
+                            aria-label="Cyan theme">
+                    </button>
+
+                    <button class="theme-dot"
+                            data-theme="pink"
+                            aria-label="Pink theme">
+                    </button>
+
+                    <button class="theme-dot"
+                            data-theme="orange"
+                            aria-label="Orange theme">
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CV BUTTON
+            ================================================== -->
+
+            <a href="assets/documents/omor-faruk-cv.pdf"
+               class="cv-button"
+               target="_blank"
+               rel="noopener">
+
+                <span>
+                    Download CV
+                </span>
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </a>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN CONTENT
+        ================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 TOP HEADER
+            ================================================== -->
+
+            <header class="top-header">
+
+
+                <!-- TOP NAVIGATION -->
+
+                <nav class="top-navigation">
+
+                    <a href="#home"
+                       class="top-link active">
+
+                        Home
+
+                    </a>
+
+                    <a href="#projects"
+                       class="top-link">
+
+                        Projects
+
+                    </a>
+
+                    <a href="#research"
+                       class="top-link">
+
+                        Research
+
+                    </a>
+
+                    <a href="#contact"
+                       class="top-link">
+
+                        Contact
+
+                    </a>
+
+                </nav>
+
+
+
+                <!-- =================================================
+                     PROFESSIONAL LINKS
+                ================================================== -->
+
+                <div class="professional-links">
+
+
+                    <!-- LINKEDIN -->
+
+                    <a href="https://www.linkedin.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                        <span>
+                            LinkedIn
+                        </span>
+
+                    </a>
+
+
+                    <!-- GITHUB -->
+
+                    <a href="https://github.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <span>
+                            GitHub
+                        </span>
+
+                    </a>
+
+
+                    <!-- GOOGLE SCHOLAR -->
+
+                    <a href="https://scholar.google.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Google Scholar">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                        <span>
+                            Scholar
+                        </span>
+
+                    </a>
+
+
+                    <!-- ORCID -->
+
+                    <a href="https://orcid.org/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="ORCID">
+
+                        <i class="fa-brands fa-orcid"></i>
+
+                        <span>
+                            ORCID
+                        </span>
+
+                    </a>
+
+
+                    <!-- EMAIL -->
+
+                    <a href="mailto:omorfarukalrashid@gmail.com"
+                       aria-label="Email">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <span>
+                            Email
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 HERO
+            ================================================== -->
+
+            <section class="section hero-section"
+                     id="home">
+
+
+                <div class="hero-container">
+
+
+                    <!-- HERO TEXT -->
+
+                    <div class="hero-content">
+
+
+                        <!-- AVAILABILITY -->
+
+                        <div class="availability-badge">
+
+                            <span class="availability-dot"></span>
+
+                            AVAILABLE FOR OPPORTUNITIES
+
+                        </div>
+
+
+
+                        <!-- NAME -->
+
+                        <h1 class="hero-title">
+
+                            <span class="hero-name">
+                                Omor Faruk
+                            </span>
+
+                            <span class="hero-name gradient-text">
+                                Al Rashid
+                            </span>
+
+                        </h1>
+
+
+
+                        <!-- ROLE -->
+
+                        <div class="hero-role">
+
+                            <span>
+                                Software Engineer
+                            </span>
+
+                            <span class="separator">
+                                /
+                            </span>
+
+                            <span>
+                                AI & Software Engineering Researcher
+                            </span>
+
+                            <span class="separator">
+                                /
+                            </span>
+
+                            <span>
+                                Founder
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- DESCRIPTION -->
+
+                        <p class="hero-description">
+
+                            I build intelligent, scalable and
+                            user-focused digital products while
+                            exploring the intersection of Artificial
+                            Intelligence and next-generation Software
+                            Engineering.
+
+                        </p>
+
+
+
+                        <!-- HERO BUTTONS -->
+
+                        <div class="hero-actions">
+
+
+                            <a href="#projects"
+                               class="button button-primary">
+
+                                <span>
+                                    Explore My Work
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                            <a href="#contact"
+                               class="button button-secondary">
+
+                                <span>
+                                    Let's Connect
+                                </span>
+
+                                <i class="fa-regular fa-paper-plane"></i>
+
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- SCROLL INDICATOR -->
+
+                        <div class="scroll-indicator">
+
+                            <span class="scroll-icon">
+
+                                <i class="fa-solid fa-chevron-down"></i>
+
+                            </span>
+
+                            <span>
+                                SCROLL TO EXPLORE
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         HERO VISUAL
+                    ================================================== -->
+
+                    <div class="hero-visual">
+
+
+                        <!-- ORBITAL SYSTEM -->
+
+                        <div class="orbital-system">
+
+                            <div class="orbit orbit-one"></div>
+
+                            <div class="orbit orbit-two"></div>
+
+                            <div class="orbit orbit-three"></div>
+
+                            <div class="orbit-core"></div>
+
+                            <div class="core-glow"></div>
+
+                        </div>
+
+
+
+                        <!-- PROFILE -->
+
+                        <div class="profile-wrapper">
+
+                            <div class="profile-glow"></div>
+
+
+                            <!--
+                                Replace this image with your
+                                professional profile photo.
+
+                                File:
+                                assets/images/profile.jpg
+                            -->
+
+                            <img src="assets/images/profile.jpg"
+                                 alt="Omor Faruk Al Rashid"
+                                 class="profile-image">
+
+
+                        </div>
+
+
+
+                        <!-- FLOATING INFO CARD -->
+
+                        <div class="floating-profile-card">
+
+
+                            <div class="floating-card-header">
+
+                                <span class="status-indicator"></span>
+
+                                <span>
+                                    Profile
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Software Engineering
+                            </h3>
+
+
+                            <ul>
+
+                                <li>
+
+                                    <i class="fa-solid fa-code"></i>
+
+                                    <span>
+                                        Full-Stack Development
+                                    </span>
+
+                                </li>
+
+
+                                <li>
+
+                                    <i class="fa-solid fa-brain"></i>
+
+                                    <span>
+                                        AI & ML Research
+                                    </span>
+
+                                </li>
+
+
+                                <li>
+
+                                    <i class="fa-solid fa-flask"></i>
+
+                                    <span>
+                                        Research & Innovation
+                                    </span>
+
+                                </li>
+
+
+                                <li>
+
+                                    <i class="fa-solid fa-rocket"></i>
+
+                                    <span>
+                                        Product Development
+                                    </span>
+
+                                </li>
+
+                            </ul>
+
+
+                            <a href="#about"
+                               class="mini-button">
+
+                                View Profile
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     HERO STATISTICS
+                ================================================== -->
+
+                <div class="statistics-grid">
+
+
+                    <div class="stat-card">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <strong>
+                            2+
+                        </strong>
+
+                        <span>
+                            Years Experience
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <i class="fa-solid fa-diagram-project"></i>
+
+                        <strong>
+                            20+
+                        </strong>
+
+                        <span>
+                            Projects
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <strong>
+                            5+
+                        </strong>
+
+                        <span>
+                            Research Papers
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        <strong>
+                            250+
+                        </strong>
+
+                        <span>
+                            Coding Problems
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <i class="fa-solid fa-award"></i>
+
+                        <strong>
+                            50+
+                        </strong>
+
+                        <span>
+                            Certifications
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <strong>
+                            Founder
+                        </strong>
+
+                        <span>
+                            Serenova Tech
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ABOUT
+            ================================================== -->
+
+            <section class="section"
+                     id="about">
+
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            GET TO KNOW ME
+                        </span>
+
+                        <h2>
+                            About Me
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="about-grid">
+
+
+                    <!-- ABOUT TEXT -->
+
+                    <div class="about-content">
+
+                        <p class="large-text">
+
+                            I am a Software Engineer passionate
+                            about building technology that solves
+                            meaningful real-world problems.
+
+                        </p>
+
+
+                        <p>
+
+                            My interests span software engineering,
+                            artificial intelligence, machine learning,
+                            intelligent systems and modern web
+                            technologies.
+
+                        </p>
+
+
+                        <p>
+
+                            Alongside engineering, I am interested in
+                            research and innovation—particularly in
+                            emerging AI-driven approaches to software
+                            development.
+
+                        </p>
+
+
+                        <p>
+
+                            My long-term vision is to combine
+                            engineering, research and entrepreneurship
+                            to create intelligent products that have
+                            practical impact.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ABOUT HIGHLIGHTS -->
+
+                    <div class="about-highlights">
+
+
+                        <article class="highlight-card">
+
+                            <i class="fa-solid fa-microchip"></i>
+
+                            <h3>
+                                Artificial Intelligence
+                            </h3>
+
+                            <p>
+                                Exploring intelligent systems,
+                                machine learning and AI-assisted
+                                software engineering.
+                            </p>
+
+                        </article>
+
+
+                        <article class="highlight-card">
+
+                            <i class="fa-solid fa-code"></i>
+
+                            <h3>
+                                Software Engineering
+                            </h3>
+
+                            <p>
+                                Designing scalable, maintainable and
+                                user-focused software solutions.
+                            </p>
+
+                        </article>
+
+
+                        <article class="highlight-card">
+
+                            <i class="fa-solid fa-flask"></i>
+
+                            <h3>
+                                Research
+                            </h3>
+
+                            <p>
+                                Investigating emerging technologies
+                                through structured research.
+                            </p>
+
+                        </article>
+
+
+                        <article class="highlight-card">
+
+                            <i class="fa-solid fa-lightbulb"></i>
+
+                            <h3>
+                                Innovation
+                            </h3>
+
+                            <p>
+                                Turning ideas into useful digital
+                                products and experiences.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PROJECTS
+            ================================================== -->
+
+            <section class="section"
+                     id="projects">
+
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            SELECTED WORK
+                        </span>
+
+                        <h2>
+                            Featured Projects
+                        </h2>
+
+                    </div>
+
+
+                    <a href="https://github.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="section-link">
+
+                        View GitHub
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="projects-grid"
+                     id="projectsGrid">
+
+
+                    <!-- PROJECT 01 -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <div class="project-placeholder">
+
+                                <i class="fa-solid fa-brain"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-body">
+
+
+                            <div class="project-tags">
+
+                                <span class="project-tag">
+                                    Python
+                                </span>
+
+                                <span class="project-tag">
+                                    ML
+                                </span>
+
+                                <span class="project-tag">
+                                    Computer Vision
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Guava Disease Detection
+                            </h3>
+
+
+                            <p>
+
+                                Machine learning based system for
+                                identifying diseases in guava fruits
+                                using image analysis.
+
+                            </p>
+
+
+                            <div class="project-footer">
+
+
+                                <a href="#"
+                                   class="project-link">
+
+                                    Case Study
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                                <a href="https://github.com/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="github-project-link">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 02 -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <div class="project-placeholder">
+
+                                <i class="fa-solid fa-robot"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-body">
+
+
+                            <div class="project-tags">
+
+                                <span class="project-tag">
+                                    AI
+                                </span>
+
+                                <span class="project-tag">
+                                    Python
+                                </span>
+
+                                <span class="project-tag">
+                                    NLP
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                AI Software Engineering Assistant
+                            </h3>
+
+
+                            <p>
+
+                                Intelligent development assistant concept
+                                for supporting requirements, coding,
+                                testing and maintenance.
+
+                            </p>
+
+
+                            <div class="project-footer">
+
+
+                                <a href="#"
+                                   class="project-link">
+
+                                    Case Study
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                                <a href="https://github.com/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="github-project-link">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 03 -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <div class="project-placeholder">
+
+                                <i class="fa-solid fa-cart-shopping"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-body">
+
+
+                            <div class="project-tags">
+
+                                <span class="project-tag">
+                                    React
+                                </span>
+
+                                <span class="project-tag">
+                                    Node.js
+                                </span>
+
+                                <span class="project-tag">
+                                    MongoDB
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Smart E-Commerce Platform
+                            </h3>
+
+
+                            <p>
+
+                                Modern e-commerce architecture designed
+                                for scalable product discovery,
+                                ordering and management.
+
+                            </p>
+
+
+                            <div class="project-footer">
+
+
+                                <a href="#"
+                                   class="project-link">
+
+                                    Case Study
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                                <a href="https://github.com/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="github-project-link">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 04 -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <div class="project-placeholder">
+
+                                <i class="fa-solid fa-chart-line"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-body">
+
+
+                            <div class="project-tags">
+
+                                <span class="project-tag">
+                                    JavaScript
+                                </span>
+
+                                <span class="project-tag">
+                                    Analytics
+                                </span>
+
+                                <span class="project-tag">
+                                    Dashboard
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Business Intelligence Dashboard
+                            </h3>
+
+
+                            <p>
+
+                                Interactive dashboard concept for
+                                monitoring business operations,
+                                financial metrics and performance.
+
+                            </p>
+
+
+                            <div class="project-footer">
+
+
+                                <a href="#"
+                                   class="project-link">
+
+                                    Case Study
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                                <a href="https://github.com/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="github-project-link">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 RESEARCH
+            ================================================== -->
+
+            <section class="section"
+                     id="research">
+
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            RESEARCH & INNOVATION
+                        </span>
+
+                        <h2>
+                            Research Focus
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="research-grid">
+
+
+                    <div class="research-topics">
+
+
+                        <div class="research-topic">
+
+                            <span>
+                                01
+                            </span>
+
+                            <i class="fa-solid fa-robot"></i>
+
+                            <strong>
+                                Agentic AI for Software Engineering
+                            </strong>
+
+                        </div>
+
+
+                        <div class="research-topic">
+
+                            <span>
+                                02
+                            </span>
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            <strong>
+                                AI-Assisted Secure Software Development
+                            </strong>
+
+                        </div>
+
+
+                        <div class="research-topic">
+
+                            <span>
+                                03
+                            </span>
+
+                            <i class="fa-solid fa-code-branch"></i>
+
+                            <strong>
+                                Intelligent DevSecOps
+                            </strong>
+
+                        </div>
+
+
+                        <div class="research-topic">
+
+                            <span>
+                                04
+                            </span>
+
+                            <i class="fa-solid fa-language"></i>
+
+                            <strong>
+                                Large Language Models
+                            </strong>
+
+                        </div>
+
+
+                        <div class="research-topic">
+
+                            <span>
+                                05
+                            </span>
+
+                            <i class="fa-solid fa-network-wired"></i>
+
+                            <strong>
+                                Intelligent Distributed Systems
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="research-visual">
+
+                        <div class="research-orbit">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                            <div class="research-core">
+                                AI
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PUBLICATIONS
+            ================================================== -->
+
+            <section class="section"
+                     id="publications">
+
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        04
+                    </span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            ACADEMIC WORK
+                        </span>
+
+                        <h2>
+                            Publications
+                        </h2>
+
+                    </div>
+
+
+                    <a href="https://scholar.google.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="section-link">
+
+                        Google Scholar
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="publications-list">
+
+
+                    <article class="publication-card">
+
+                        <div class="publication-icon">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                        </div>
+
+
+                        <div class="publication-info">
+
+                            <h3>
+                                Agentic AI for Autonomous Software Engineering
+                            </h3>
+
+                            <p>
+                                Artificial Intelligence / Software Engineering
+                            </p>
+
+                        </div>
+
+
+                        <span class="publication-year">
+                            2026
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="publication-card">
+
+                        <div class="publication-icon">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                        </div>
+
+
+                        <div class="publication-info">
+
+                            <h3>
+                                Explainable Machine Learning for Software Security
+                            </h3>
+
+                            <p>
+                                Machine Learning / Secure Software
+                            </p>
+
+                        </div>
+
+
+                        <span class="publication-year">
+                            2026
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="publication-card">
+
+                        <div class="publication-icon">
+
+                            <i class="fa-solid fa-microchip"></i>
+
+                        </div>
+
+
+                        <div class="publication-info">
+
+                            <h3>
+                                Large Language Models for Intelligent Software Development
+                            </h3>
+
+                            <p>
+                                LLM / Software Engineering
+                            </p>
+
+                        </div>
+
+
+                        <span class="publication-year">
+                            2026
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="publication-card">
+
+                        <div class="publication-icon">
+
+                            <i class="fa-solid fa-network-wired"></i>
+
+                        </div>
+
+
+                        <div class="publication-info">
+
+                            <h3>
+                                Privacy-Preserving Federated Learning for IoT Security
+                            </h3>
+
+                            <p>
+                                Federated Learning / Cybersecurity
+                            </p>
+
+                        </div>
+
+
+                        <span class="publication-year">
+                            2026
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 EXPERIENCE
+            ================================================== -->
+
+            <section class="section"
+                     id="experience">
+
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        05
+                    </span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            PROFESSIONAL JOURNEY
+                        </span>
+
+                        <h2>
+                            Experience
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="timeline">
+
+
+                    <!-- EXPERIENCE 01 -->
+
+                    <div class="timeline-item">
+
+
+                        <span class="timeline-dot"></span>
+
+
+                        <div class="timeline-content">
+
+
+                            <span class="timeline-date">
+                                2026 — Present
+                            </span>
+
+
+                            <h3>
+                                Founder & CEO
+                            </h3>
+
+
+                            <h4>
+                                Serenova Tech
+                            </h4>
+
+
+                            <p>
+
+                                Leading technology initiatives,
+                                software product development,
+                                engineering strategy and innovation.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EXPERIENCE 02 -->
+
+                    <div class="timeline-item">
+
+
+                        <span class="timeline-dot"></span>
+
+
+                        <div class="timeline-content">
+
+
+                            <span class="timeline-date">
+                                2024 — 2025
+                            </span>
+
+
+                            <h3>
+                                Software Engineer
+                            </h3>
+
+
+                            <h4>
+                                Software Development
+                            </h4>
+
+
+                            <p>
+
+                                Worked on software development,
+                                debugging, testing, database
+                                integration and web application
+                                development.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EXPERIENCE 03 -->
+
+                    <div class="timeline-item">
+
+
+                        <span class="timeline-dot"></span>
+
+
+                        <div class="timeline-content">
+
+
+                            <span class="timeline-date">
+                                2024 — 2025
+                            </span>
+
+
+                            <h3>
+                                Software Engineering Intern
+                            </h3>
+
+
+                            <h4>
+                                Turnago IT & Technical Training Centre
+                            </h4>
+
+
+                            <p>
+
+                                Gained practical experience in software
+                                development, debugging, testing and
+                                professional engineering workflows.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SKILLS
+            ================================================== -->
+
+            <section class="section"
+                     id="skills">
+
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        06
+                    </span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            TECHNICAL TOOLKIT
+                        </span>
+
+                        <h2>
+                            Skills & Technologies
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skills-grid">
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Python
+                            </strong>
+
+                            <span>
+                                AI / ML / Backend
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Java
+                            </strong>
+
+                            <span>
+                                OOP / Applications
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                JavaScript
+                            </strong>
+
+                            <span>
+                                Web Development
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                React.js
+                            </strong>
+
+                            <span>
+                                Frontend
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-node-js"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Node.js
+                            </strong>
+
+                            <span>
+                                Backend
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                MySQL / MongoDB
+                            </strong>
+
+                            <span>
+                                Database
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                PHP
+                            </strong>
+
+                            <span>
+                                Web Backend
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Git & GitHub
+                            </strong>
+
+                            <span>
+                                Version Control
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Linux
+                            </strong>
+
+                            <span>
+                                Development Environment
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ACHIEVEMENTS
+            ================================================== -->
+
+            <section class="section"
+                     id="achievements">
+
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        07
+                    </span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            MILESTONES
+                        </span>
+
+                        <h2>
+                            Achievements
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="achievements-grid">
+
+
+                    <article class="achievement-card">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <div>
+
+                            <strong>
+                                250+
+                            </strong>
+
+                            <h3>
+                                Coding Problems
+                            </h3>
+
+                            <p>
+                                Algorithmic problem solving
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="achievement-card">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <div>
+
+                            <strong>
+                                5+
+                            </strong>
+
+                            <h3>
+                                Research Publications
+                            </h3>
+
+                            <p>
+                                AI & Software Engineering
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="achievement-card">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                        <div>
+
+                            <strong>
+                                50+
+                            </strong>
+
+                            <h3>
+                                Professional Courses
+                            </h3>
+
+                            <p>
+                                Technology & Engineering
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CERTIFICATIONS
+            ================================================== -->
+
+            <section class="section"
+                     id="certifications">
+
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        08
+                    </span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            CONTINUOUS LEARNING
+                        </span>
+
+                        <h2>
+                            Certifications
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="certifications-grid">
+
+
+                    <article class="certification-card">
+
+                        <div class="certification-icon">
+
+                            <i class="fa-brands fa-google"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Google Professional Courses
+                            </h3>
+
+                            <p>
+                                Coursera
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="certification-card">
+
+                        <div class="certification-icon">
+
+                            <i class="fa-brands fa-meta"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Meta Development Courses
+                            </h3>
+
+                            <p>
+                                Coursera
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="certification-card">
+
+                        <div class="certification-icon">
+
+                            <i class="fa-brands fa-ibm"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                IBM Technology Courses
+                            </h3>
+
+                            <p>
+                                Coursera
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 BLOG / INSIGHTS
+            ================================================== -->
+
+            <section class="section"
+                     id="blog">
+
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        09
+                    </span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            THOUGHTS & INSIGHTS
+                        </span>
+
+                        <h2>
+                            Research & Engineering Insights
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="blog-grid">
+
+
+                    <article class="blog-card">
+
+                        <span class="blog-category">
+                            AI
+                        </span>
+
+                        <h3>
+                            The Future of Agentic Software Engineering
+                        </h3>
+
+                        <p>
+
+                            Exploring how autonomous AI agents could
+                            transform the software development lifecycle.
+
+                        </p>
+
+                        <a href="#">
+
+                            Read Article
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+                    <article class="blog-card">
+
+                        <span class="blog-category">
+                            SOFTWARE
+                        </span>
+
+                        <h3>
+                            Building Maintainable Software Systems
+                        </h3>
+
+                        <p>
+
+                            Practical principles for creating software
+                            systems that remain reliable as they scale.
+
+                        </p>
+
+                        <a href="#">
+
+                            Read Article
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+                    <article class="blog-card">
+
+                        <span class="blog-category">
+                            RESEARCH
+                        </span>
+
+                        <h3>
+                            From Research Idea to Real-World Product
+                        </h3>
+
+                        <p>
+
+                            A perspective on transforming technical
+                            research into useful products.
+
+                        </p>
+
+                        <a href="#">
+
+                            Read Article
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CONTACT
+            ================================================== -->
+
+            <section class="section"
+                     id="contact">
+
+
+                <div class="contact-container">
+
+
+                    <div class="contact-content">
+
+
+                        <span class="section-kicker">
+                            LET'S BUILD SOMETHING
+                        </span>
+
+
+                        <h2>
+
+                            Have an idea?
+
+                            <span class="gradient-text">
+                                Let's create it.
+                            </span>
+
+                        </h2>
+
+
+                        <p>
+
+                            Whether you are interested in software
+                            engineering, research collaboration,
+                            technology products or an exciting project,
+                            I would love to hear from you.
+
+                        </p>
+
+
+                        <a href="mailto:omorfarukalrashid@gmail.com"
+                           class="button button-primary">
+
+                            Start a Conversation
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="contact-details">
+
+
+                        <a href="mailto:omorfarukalrashid@gmail.com"
+                           class="contact-detail">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    EMAIL
+                                </small>
+
+                                <strong>
+                                    omorfarukalrashid@gmail.com
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+
+
+                        <a href="https://github.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="contact-detail">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-brands fa-github"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    GITHUB
+                                </small>
+
+                                <strong>
+                                    github.com/omorfarukalrashid
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+
+
+                        <a href="https://www.linkedin.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="contact-detail">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    LINKEDIN
+                                </small>
+
+                                <strong>
+                                    Connect professionally
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+
+            <footer class="footer">
+
+
+                <div class="footer-brand">
+
+                    <span>
+                        OF
+                    </span>
+
+                    <strong>
+                        Omor Faruk Al Rashid
+                    </strong>
+
+                </div>
+
+
+                <div>
+                    Software Engineer • Researcher • Founder
+                </div>
+
+
+                <nav class="footer-links">
+
+                    <a href="#home">
+                        Home
+                    </a>
+
+                    <a href="#projects">
+                        Projects
+                    </a>
+
+                    <a href="#research">
+                        Research
+                    </a>
+
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                </nav>
+
+
+                <div class="footer-credit">
+
+                    Built with passion
+
+                    <span>
+                        ♥
+                    </span>
+
+                    © 2026
+
+                </div>
+
+            </footer>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT LIBRARIES
+    ====================================================== -->
+
+    <!-- Three.js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+
+    <!-- GSAP -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+
+
+    <!-- GSAP ScrollTrigger -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+
+    <!-- =====================================================
+         CUSTOM JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/animations.js"></script>
+
+    <script src="js/three-bg.js"></script>
+
+    <script src="js/projects.js"></script>
+
+
+</body>
+
+</html>
