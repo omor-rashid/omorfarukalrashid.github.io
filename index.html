@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- =====================================================
          BASIC META
     ====================================================== -->
@@ -12,16 +13,41 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Omor Faruk Al Rashid — Software Engineer, AI & Software Engineering Researcher, Founder.">
+          content="Omor Faruk Al Rashid — Software Engineer, AI & Software Engineering Researcher, and Founder.">
 
     <meta name="keywords"
-          content="Omor Faruk Al Rashid, Software Engineer, AI Researcher, Software Engineering, Bangladesh">
+          content="Omor Faruk Al Rashid, Software Engineer, AI Researcher, Software Engineering, Artificial Intelligence, Bangladesh">
 
     <meta name="author"
           content="Omor Faruk Al Rashid">
 
     <meta name="theme-color"
           content="#050816">
+
+    <meta name="robots"
+          content="index, follow">
+
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta property="og:title"
+          content="Omor Faruk Al Rashid | Software Engineer & Researcher">
+
+    <meta property="og:description"
+          content="Software Engineer, AI & Software Engineering Researcher, and Founder.">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:image"
+          content="assets/images/profile.jpg">
+
+
+    <!-- =====================================================
+         TITLE
+    ====================================================== -->
 
     <title>
         Omor Faruk Al Rashid | Software Engineer & Researcher
@@ -39,16 +65,18 @@
           href="https://fonts.gstatic.com"
           crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
 
     <!-- =====================================================
          FONT AWESOME
     ====================================================== -->
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
     <!-- =====================================================
@@ -67,13 +95,25 @@
 </head>
 
 
-<body data-theme="purple">
+<body>
+
+
+    <!-- =====================================================
+         SCROLL PROGRESS
+    ====================================================== -->
+
+    <div class="scroll-progress"
+         aria-hidden="true">
+    </div>
+
 
     <!-- =====================================================
          PAGE LOADER
     ====================================================== -->
 
-    <div class="page-loader" id="pageLoader">
+    <div class="page-loader"
+         id="pageLoader"
+         aria-hidden="true">
 
         <div class="loader-content">
 
@@ -95,19 +135,43 @@
 
 
     <!-- =====================================================
+         THEME TRANSITION
+    ====================================================== -->
+
+    <div class="theme-transition"
+         aria-hidden="true">
+    </div>
+
+
+    <!-- =====================================================
+         PAGE TRANSITION
+    ====================================================== -->
+
+    <div class="page-transition"
+         aria-hidden="true">
+    </div>
+
+
+    <!-- =====================================================
          THREE.JS BACKGROUND
     ====================================================== -->
 
-    <canvas id="threeBackground"></canvas>
+    <canvas id="three-background"
+            aria-hidden="true">
+    </canvas>
 
 
     <!-- =====================================================
          CUSTOM CURSOR
     ====================================================== -->
 
-    <div class="cursor-dot"></div>
+    <div class="cursor-dot"
+         aria-hidden="true">
+    </div>
 
-    <div class="cursor-outline"></div>
+    <div class="cursor-outline"
+         aria-hidden="true">
+    </div>
 
 
     <!-- =====================================================
@@ -117,7 +181,8 @@
     <header class="mobile-header">
 
         <a href="#home"
-           class="mobile-logo">
+           class="mobile-logo"
+           aria-label="Go to homepage">
 
             <span class="logo-symbol">
                 OF
@@ -138,9 +203,13 @@
         </a>
 
 
-        <button class="mobile-menu-button"
-                id="mobileMenuButton"
-                aria-label="Open navigation">
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobileNavigation">
 
             <i class="fa-solid fa-bars"></i>
 
@@ -148,6 +217,125 @@
 
     </header>
 
+
+    <!-- =====================================================
+         MOBILE NAVIGATION
+    ====================================================== -->
+
+    <nav
+        class="mobile-navigation"
+        id="mobileNavigation"
+        aria-label="Mobile navigation">
+
+        <a href="#home"
+           data-nav-link
+           class="active">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+        <a href="#about"
+           data-nav-link>
+
+            <i class="fa-regular fa-user"></i>
+
+            <span>
+                About
+            </span>
+
+        </a>
+
+
+        <a href="#projects"
+           data-nav-link>
+
+            <i class="fa-solid fa-code"></i>
+
+            <span>
+                Projects
+            </span>
+
+        </a>
+
+
+        <a href="#research"
+           data-nav-link>
+
+            <i class="fa-solid fa-flask"></i>
+
+            <span>
+                Research
+            </span>
+
+        </a>
+
+
+        <a href="#publications"
+           data-nav-link>
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <span>
+                Publications
+            </span>
+
+        </a>
+
+
+        <a href="#experience"
+           data-nav-link>
+
+            <i class="fa-solid fa-briefcase"></i>
+
+            <span>
+                Experience
+            </span>
+
+        </a>
+
+
+        <a href="#skills"
+           data-nav-link>
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <span>
+                Skills
+            </span>
+
+        </a>
+
+
+        <a href="#certifications"
+           data-nav-link>
+
+            <i class="fa-solid fa-certificate"></i>
+
+            <span>
+                Certifications
+            </span>
+
+        </a>
+
+
+        <a href="#contact"
+           data-nav-link>
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <span>
+                Contact
+            </span>
+
+        </a>
+
+    </nav>
 
 
     <!-- =====================================================
@@ -170,7 +358,8 @@
             <div class="sidebar-logo">
 
                 <a href="#home"
-                   class="logo-link">
+                   class="logo-link"
+                   aria-label="Omor Faruk Al Rashid Home">
 
                     <span class="logo-symbol">
                         OF
@@ -195,12 +384,14 @@
 
             <!-- SIDEBAR NAVIGATION -->
 
-            <nav class="sidebar-navigation"
-                 aria-label="Main navigation">
+            <nav
+                class="sidebar-navigation"
+                aria-label="Main navigation">
 
 
                 <a href="#home"
-                   class="sidebar-link active">
+                   class="sidebar-link active"
+                   data-nav-link>
 
                     <i class="fa-solid fa-house"></i>
 
@@ -212,7 +403,8 @@
 
 
                 <a href="#about"
-                   class="sidebar-link">
+                   class="sidebar-link"
+                   data-nav-link>
 
                     <i class="fa-regular fa-user"></i>
 
@@ -224,7 +416,8 @@
 
 
                 <a href="#projects"
-                   class="sidebar-link">
+                   class="sidebar-link"
+                   data-nav-link>
 
                     <i class="fa-solid fa-code"></i>
 
@@ -236,7 +429,8 @@
 
 
                 <a href="#research"
-                   class="sidebar-link">
+                   class="sidebar-link"
+                   data-nav-link>
 
                     <i class="fa-solid fa-flask"></i>
 
@@ -247,8 +441,22 @@
                 </a>
 
 
+                <a href="#publications"
+                   class="sidebar-link"
+                   data-nav-link>
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <span>
+                        Publications
+                    </span>
+
+                </a>
+
+
                 <a href="#experience"
-                   class="sidebar-link">
+                   class="sidebar-link"
+                   data-nav-link>
 
                     <i class="fa-solid fa-briefcase"></i>
 
@@ -260,7 +468,8 @@
 
 
                 <a href="#skills"
-                   class="sidebar-link">
+                   class="sidebar-link"
+                   data-nav-link>
 
                     <i class="fa-solid fa-layer-group"></i>
 
@@ -272,7 +481,8 @@
 
 
                 <a href="#certifications"
-                   class="sidebar-link">
+                   class="sidebar-link"
+                   data-nav-link>
 
                     <i class="fa-solid fa-certificate"></i>
 
@@ -284,7 +494,8 @@
 
 
                 <a href="#contact"
-                   class="sidebar-link">
+                   class="sidebar-link"
+                   data-nav-link>
 
                     <i class="fa-regular fa-envelope"></i>
 
@@ -295,7 +506,6 @@
                 </a>
 
             </nav>
-
 
 
             <!-- =================================================
@@ -311,29 +521,54 @@
 
                 <div class="theme-options">
 
-                    <button class="theme-dot active"
-                            data-theme="purple"
-                            aria-label="Purple theme">
+
+                    <button
+                        class="theme-dot active"
+                        data-theme="purple"
+                        type="button"
+                        aria-label="Violet theme"
+                        title="Violet">
+
                     </button>
 
-                    <button class="theme-dot"
-                            data-theme="blue"
-                            aria-label="Blue theme">
+
+                    <button
+                        class="theme-dot"
+                        data-theme="cyan"
+                        type="button"
+                        aria-label="Cyber Cyan theme"
+                        title="Cyber Cyan">
+
                     </button>
 
-                    <button class="theme-dot"
-                            data-theme="cyan"
-                            aria-label="Cyan theme">
+
+                    <button
+                        class="theme-dot"
+                        data-theme="emerald"
+                        type="button"
+                        aria-label="Emerald theme"
+                        title="Emerald">
+
                     </button>
 
-                    <button class="theme-dot"
-                            data-theme="pink"
-                            aria-label="Pink theme">
+
+                    <button
+                        class="theme-dot"
+                        data-theme="rose"
+                        type="button"
+                        aria-label="Rose theme"
+                        title="Rose">
+
                     </button>
 
-                    <button class="theme-dot"
-                            data-theme="orange"
-                            aria-label="Orange theme">
+
+                    <button
+                        class="theme-dot"
+                        data-theme="gold"
+                        type="button"
+                        aria-label="Aurora Gold theme"
+                        title="Aurora Gold">
+
                     </button>
 
                 </div>
@@ -341,15 +576,16 @@
             </div>
 
 
-
             <!-- =================================================
                  CV BUTTON
             ================================================== -->
 
-            <a href="assets/documents/omor-faruk-cv.pdf"
-               class="cv-button"
-               target="_blank"
-               rel="noopener">
+            <a
+                href="assets/documents/omor-faruk-cv.pdf"
+                class="cv-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-magnetic>
 
                 <span>
                     Download CV
@@ -359,8 +595,8 @@
 
             </a>
 
-        </aside>
 
+        </aside>
 
 
         <!-- =================================================
@@ -379,38 +615,55 @@
 
                 <!-- TOP NAVIGATION -->
 
-                <nav class="top-navigation">
+                <nav class="top-navigation"
+                     aria-label="Quick navigation">
+
 
                     <a href="#home"
-                       class="top-link active">
+                       class="top-link active"
+                       data-nav-link>
 
                         Home
 
                     </a>
 
+
                     <a href="#projects"
-                       class="top-link">
+                       class="top-link"
+                       data-nav-link>
 
                         Projects
 
                     </a>
 
+
                     <a href="#research"
-                       class="top-link">
+                       class="top-link"
+                       data-nav-link>
 
                         Research
 
                     </a>
 
+
+                    <a href="#publications"
+                       class="top-link"
+                       data-nav-link>
+
+                        Publications
+
+                    </a>
+
+
                     <a href="#contact"
-                       class="top-link">
+                       class="top-link"
+                       data-nav-link>
 
                         Contact
 
                     </a>
 
                 </nav>
-
 
 
                 <!-- =================================================
@@ -422,10 +675,11 @@
 
                     <!-- LINKEDIN -->
 
-                    <a href="https://www.linkedin.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="LinkedIn">
+                    <a
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
 
                         <i class="fa-brands fa-linkedin-in"></i>
 
@@ -438,10 +692,11 @@
 
                     <!-- GITHUB -->
 
-                    <a href="https://github.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="GitHub">
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub">
 
                         <i class="fa-brands fa-github"></i>
 
@@ -454,10 +709,11 @@
 
                     <!-- GOOGLE SCHOLAR -->
 
-                    <a href="https://scholar.google.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="Google Scholar">
+                    <a
+                        href="https://scholar.google.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Google Scholar">
 
                         <i class="fa-solid fa-graduation-cap"></i>
 
@@ -470,10 +726,11 @@
 
                     <!-- ORCID -->
 
-                    <a href="https://orcid.org/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="ORCID">
+                    <a
+                        href="https://orcid.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="ORCID">
 
                         <i class="fa-brands fa-orcid"></i>
 
@@ -486,8 +743,9 @@
 
                     <!-- EMAIL -->
 
-                    <a href="mailto:omorfarukalrashid@gmail.com"
-                       aria-label="Email">
+                    <a
+                        href="mailto:omorfarukalrashid@gmail.com"
+                        aria-label="Email">
 
                         <i class="fa-regular fa-envelope"></i>
 
@@ -502,13 +760,13 @@
             </header>
 
 
-
             <!-- =================================================
                  HERO
             ================================================== -->
 
-            <section class="section hero-section"
-                     id="home">
+            <section
+                class="section hero-section"
+                id="home">
 
 
                 <div class="hero-container">
@@ -530,21 +788,28 @@
                         </div>
 
 
-
                         <!-- NAME -->
 
                         <h1 class="hero-title">
 
-                            <span class="hero-name">
+                            <span
+                                class="hero-name"
+                                data-text-reveal>
+
                                 Omor Faruk
+
                             </span>
 
-                            <span class="hero-name gradient-text">
+
+                            <span
+                                class="hero-name gradient-text"
+                                data-text-reveal>
+
                                 Al Rashid
+
                             </span>
 
                         </h1>
-
 
 
                         <!-- ROLE -->
@@ -574,7 +839,6 @@
                         </div>
 
 
-
                         <!-- DESCRIPTION -->
 
                         <p class="hero-description">
@@ -588,14 +852,15 @@
                         </p>
 
 
-
                         <!-- HERO BUTTONS -->
 
                         <div class="hero-actions">
 
 
-                            <a href="#projects"
-                               class="button button-primary">
+                            <a
+                                href="#projects"
+                                class="button button-primary"
+                                data-magnetic>
 
                                 <span>
                                     Explore My Work
@@ -606,8 +871,10 @@
                             </a>
 
 
-                            <a href="#contact"
-                               class="button button-secondary">
+                            <a
+                                href="#contact"
+                                class="button button-secondary"
+                                data-magnetic>
 
                                 <span>
                                     Let's Connect
@@ -618,7 +885,6 @@
                             </a>
 
                         </div>
-
 
 
                         <!-- SCROLL INDICATOR -->
@@ -637,8 +903,8 @@
 
                         </div>
 
-                    </div>
 
+                    </div>
 
 
                     <!-- =================================================
@@ -650,7 +916,9 @@
 
                         <!-- ORBITAL SYSTEM -->
 
-                        <div class="orbital-system">
+                        <div
+                            class="orbital-system"
+                            data-floating="5">
 
                             <div class="orbit orbit-one"></div>
 
@@ -665,34 +933,40 @@
                         </div>
 
 
-
                         <!-- PROFILE -->
 
-                        <div class="profile-wrapper">
+                        <div
+                            class="profile-wrapper"
+                            data-image-hover
+                            data-tilt
+                            data-tilt-intensity="4">
 
                             <div class="profile-glow"></div>
 
 
                             <!--
-                                Replace this image with your
-                                professional profile photo.
+                                PROFILE PHOTO
 
-                                File:
+                                Place your image here:
+
                                 assets/images/profile.jpg
                             -->
 
-                            <img src="assets/images/profile.jpg"
-                                 alt="Omor Faruk Al Rashid"
-                                 class="profile-image">
-
+                            <img
+                                src="assets/images/profile.jpg"
+                                alt="Professional portrait of Omor Faruk Al Rashid"
+                                class="profile-image"
+                                loading="eager">
 
                         </div>
 
 
-
                         <!-- FLOATING INFO CARD -->
 
-                        <div class="floating-profile-card">
+                        <div
+                            class="floating-profile-card"
+                            data-tilt
+                            data-tilt-intensity="3">
 
 
                             <div class="floating-card-header">
@@ -712,6 +986,7 @@
 
 
                             <ul>
+
 
                                 <li>
 
@@ -756,11 +1031,13 @@
 
                                 </li>
 
+
                             </ul>
 
 
-                            <a href="#about"
-                               class="mini-button">
+                            <a
+                                href="#about"
+                                class="mini-button">
 
                                 View Profile
 
@@ -768,12 +1045,14 @@
 
                             </a>
 
+
                         </div>
+
 
                     </div>
 
-                </div>
 
+                </div>
 
 
                 <!-- =================================================
@@ -783,12 +1062,18 @@
                 <div class="statistics-grid">
 
 
-                    <div class="stat-card">
+                    <div class="stat-card tilt-card"
+                         data-tilt>
 
                         <i class="fa-solid fa-code"></i>
 
-                        <strong>
-                            2+
+                        <strong
+                            data-counter="2"
+                            data-suffix="+"
+                            data-duration="1400">
+
+                            0
+
                         </strong>
 
                         <span>
@@ -798,12 +1083,18 @@
                     </div>
 
 
-                    <div class="stat-card">
+                    <div class="stat-card tilt-card"
+                         data-tilt>
 
                         <i class="fa-solid fa-diagram-project"></i>
 
-                        <strong>
-                            20+
+                        <strong
+                            data-counter="20"
+                            data-suffix="+"
+                            data-duration="1600">
+
+                            0
+
                         </strong>
 
                         <span>
@@ -813,12 +1104,18 @@
                     </div>
 
 
-                    <div class="stat-card">
+                    <div class="stat-card tilt-card"
+                         data-tilt>
 
                         <i class="fa-solid fa-file-lines"></i>
 
-                        <strong>
-                            5+
+                        <strong
+                            data-counter="5"
+                            data-suffix="+"
+                            data-duration="1800">
+
+                            0
+
                         </strong>
 
                         <span>
@@ -828,12 +1125,18 @@
                     </div>
 
 
-                    <div class="stat-card">
+                    <div class="stat-card tilt-card"
+                         data-tilt>
 
                         <i class="fa-solid fa-laptop-code"></i>
 
-                        <strong>
-                            250+
+                        <strong
+                            data-counter="250"
+                            data-suffix="+"
+                            data-duration="2000">
+
+                            0
+
                         </strong>
 
                         <span>
@@ -843,12 +1146,18 @@
                     </div>
 
 
-                    <div class="stat-card">
+                    <div class="stat-card tilt-card"
+                         data-tilt>
 
                         <i class="fa-solid fa-award"></i>
 
-                        <strong>
-                            50+
+                        <strong
+                            data-counter="50"
+                            data-suffix="+"
+                            data-duration="2200">
+
+                            0
+
                         </strong>
 
                         <span>
@@ -858,7 +1167,8 @@
                     </div>
 
 
-                    <div class="stat-card">
+                    <div class="stat-card tilt-card"
+                         data-tilt>
 
                         <i class="fa-solid fa-users"></i>
 
@@ -872,18 +1182,20 @@
 
                     </div>
 
+
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
                  ABOUT
             ================================================== -->
 
-            <section class="section"
-                     id="about">
+            <section
+                class="section"
+                id="about">
 
 
                 <div class="section-heading">
@@ -905,7 +1217,6 @@
                     </div>
 
                 </div>
-
 
 
                 <div class="about-grid">
@@ -956,13 +1267,16 @@
                     </div>
 
 
-
                     <!-- ABOUT HIGHLIGHTS -->
 
-                    <div class="about-highlights">
+                    <div
+                        class="about-highlights"
+                        data-stagger>
 
 
-                        <article class="highlight-card">
+                        <article
+                            class="highlight-card tilt-card"
+                            data-tilt>
 
                             <i class="fa-solid fa-microchip"></i>
 
@@ -971,15 +1285,19 @@
                             </h3>
 
                             <p>
+
                                 Exploring intelligent systems,
                                 machine learning and AI-assisted
                                 software engineering.
+
                             </p>
 
                         </article>
 
 
-                        <article class="highlight-card">
+                        <article
+                            class="highlight-card tilt-card"
+                            data-tilt>
 
                             <i class="fa-solid fa-code"></i>
 
@@ -988,14 +1306,18 @@
                             </h3>
 
                             <p>
+
                                 Designing scalable, maintainable and
                                 user-focused software solutions.
+
                             </p>
 
                         </article>
 
 
-                        <article class="highlight-card">
+                        <article
+                            class="highlight-card tilt-card"
+                            data-tilt>
 
                             <i class="fa-solid fa-flask"></i>
 
@@ -1004,14 +1326,18 @@
                             </h3>
 
                             <p>
+
                                 Investigating emerging technologies
                                 through structured research.
+
                             </p>
 
                         </article>
 
 
-                        <article class="highlight-card">
+                        <article
+                            class="highlight-card tilt-card"
+                            data-tilt>
 
                             <i class="fa-solid fa-lightbulb"></i>
 
@@ -1020,26 +1346,31 @@
                             </h3>
 
                             <p>
+
                                 Turning ideas into useful digital
                                 products and experiences.
+
                             </p>
 
                         </article>
 
+
                     </div>
+
 
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
                  PROJECTS
             ================================================== -->
 
-            <section class="section"
-                     id="projects">
+            <section
+                class="section"
+                id="projects">
 
 
                 <div class="section-heading">
@@ -1061,10 +1392,11 @@
                     </div>
 
 
-                    <a href="https://github.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="section-link">
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="section-link">
 
                         View GitHub
 
@@ -1075,14 +1407,18 @@
                 </div>
 
 
-
-                <div class="projects-grid"
-                     id="projectsGrid">
+                <div
+                    class="projects-grid"
+                    id="projectsGrid"
+                    data-stagger>
 
 
                     <!-- PROJECT 01 -->
 
-                    <article class="project-card">
+                    <article
+                        class="project-card tilt-card"
+                        data-tilt
+                        data-tilt-intensity="5">
 
 
                         <div class="project-image">
@@ -1133,8 +1469,9 @@
                             <div class="project-footer">
 
 
-                                <a href="#"
-                                   class="project-link">
+                                <a
+                                    href="#"
+                                    class="project-link">
 
                                     Case Study
 
@@ -1143,26 +1480,33 @@
                                 </a>
 
 
-                                <a href="https://github.com/"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="github-project-link">
+                                <a
+                                    href="https://github.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="github-project-link"
+                                    aria-label="Project GitHub repository">
 
                                     <i class="fa-brands fa-github"></i>
 
                                 </a>
 
+
                             </div>
 
+
                         </div>
+
 
                     </article>
 
 
-
                     <!-- PROJECT 02 -->
 
-                    <article class="project-card">
+                    <article
+                        class="project-card tilt-card"
+                        data-tilt
+                        data-tilt-intensity="5">
 
 
                         <div class="project-image">
@@ -1213,8 +1557,9 @@
                             <div class="project-footer">
 
 
-                                <a href="#"
-                                   class="project-link">
+                                <a
+                                    href="#"
+                                    class="project-link">
 
                                     Case Study
 
@@ -1223,26 +1568,33 @@
                                 </a>
 
 
-                                <a href="https://github.com/"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="github-project-link">
+                                <a
+                                    href="https://github.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="github-project-link"
+                                    aria-label="Project GitHub repository">
 
                                     <i class="fa-brands fa-github"></i>
 
                                 </a>
 
+
                             </div>
 
+
                         </div>
+
 
                     </article>
 
 
-
                     <!-- PROJECT 03 -->
 
-                    <article class="project-card">
+                    <article
+                        class="project-card tilt-card"
+                        data-tilt
+                        data-tilt-intensity="5">
 
 
                         <div class="project-image">
@@ -1293,8 +1645,9 @@
                             <div class="project-footer">
 
 
-                                <a href="#"
-                                   class="project-link">
+                                <a
+                                    href="#"
+                                    class="project-link">
 
                                     Case Study
 
@@ -1303,26 +1656,33 @@
                                 </a>
 
 
-                                <a href="https://github.com/"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="github-project-link">
+                                <a
+                                    href="https://github.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="github-project-link"
+                                    aria-label="Project GitHub repository">
 
                                     <i class="fa-brands fa-github"></i>
 
                                 </a>
 
+
                             </div>
 
+
                         </div>
+
 
                     </article>
 
 
-
                     <!-- PROJECT 04 -->
 
-                    <article class="project-card">
+                    <article
+                        class="project-card tilt-card"
+                        data-tilt
+                        data-tilt-intensity="5">
 
 
                         <div class="project-image">
@@ -1373,8 +1733,9 @@
                             <div class="project-footer">
 
 
-                                <a href="#"
-                                   class="project-link">
+                                <a
+                                    href="#"
+                                    class="project-link">
 
                                     Case Study
 
@@ -1383,33 +1744,40 @@
                                 </a>
 
 
-                                <a href="https://github.com/"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="github-project-link">
+                                <a
+                                    href="https://github.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="github-project-link"
+                                    aria-label="Project GitHub repository">
 
                                     <i class="fa-brands fa-github"></i>
 
                                 </a>
 
+
                             </div>
+
 
                         </div>
 
+
                     </article>
+
 
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
                  RESEARCH
             ================================================== -->
 
-            <section class="section"
-                     id="research">
+            <section
+                class="section"
+                id="research">
 
 
                 <div class="section-heading">
@@ -1433,11 +1801,12 @@
                 </div>
 
 
-
                 <div class="research-grid">
 
 
-                    <div class="research-topics">
+                    <div
+                        class="research-topics"
+                        data-stagger>
 
 
                         <div class="research-topic">
@@ -1514,17 +1883,22 @@
 
                         </div>
 
+
                     </div>
 
 
+                    <div class="research-visual"
+                         data-parallax="0.08">
 
-                    <div class="research-visual">
 
                         <div class="research-orbit">
 
                             <span></span>
+
                             <span></span>
+
                             <span></span>
+
 
                             <div class="research-core">
                                 AI
@@ -1532,20 +1906,23 @@
 
                         </div>
 
+
                     </div>
+
 
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
                  PUBLICATIONS
             ================================================== -->
 
-            <section class="section"
-                     id="publications">
+            <section
+                class="section"
+                id="publications">
 
 
                 <div class="section-heading">
@@ -1567,10 +1944,11 @@
                     </div>
 
 
-                    <a href="https://scholar.google.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="section-link">
+                    <a
+                        href="https://scholar.google.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="section-link">
 
                         Google Scholar
 
@@ -1581,11 +1959,14 @@
                 </div>
 
 
+                <div class="publications-list"
+                     data-stagger>
 
-                <div class="publications-list">
 
+                    <article
+                        class="publication-card tilt-card"
+                        data-tilt>
 
-                    <article class="publication-card">
 
                         <div class="publication-icon">
 
@@ -1611,11 +1992,14 @@
                             2026
                         </span>
 
+
                     </article>
 
 
+                    <article
+                        class="publication-card tilt-card"
+                        data-tilt>
 
-                    <article class="publication-card">
 
                         <div class="publication-icon">
 
@@ -1641,11 +2025,14 @@
                             2026
                         </span>
 
+
                     </article>
 
 
+                    <article
+                        class="publication-card tilt-card"
+                        data-tilt>
 
-                    <article class="publication-card">
 
                         <div class="publication-icon">
 
@@ -1671,11 +2058,14 @@
                             2026
                         </span>
 
+
                     </article>
 
 
+                    <article
+                        class="publication-card tilt-card"
+                        data-tilt>
 
-                    <article class="publication-card">
 
                         <div class="publication-icon">
 
@@ -1701,20 +2091,23 @@
                             2026
                         </span>
 
+
                     </article>
+
 
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
                  EXPERIENCE
             ================================================== -->
 
-            <section class="section"
-                     id="experience">
+            <section
+                class="section"
+                id="experience">
 
 
                 <div class="section-heading">
@@ -1738,7 +2131,6 @@
                 </div>
 
 
-
                 <div class="timeline">
 
 
@@ -1746,12 +2138,10 @@
 
                     <div class="timeline-item">
 
-
                         <span class="timeline-dot"></span>
 
 
                         <div class="timeline-content">
-
 
                             <span class="timeline-date">
                                 2026 — Present
@@ -1781,17 +2171,14 @@
                     </div>
 
 
-
                     <!-- EXPERIENCE 02 -->
 
                     <div class="timeline-item">
-
 
                         <span class="timeline-dot"></span>
 
 
                         <div class="timeline-content">
-
 
                             <span class="timeline-date">
                                 2024 — 2025
@@ -1822,17 +2209,14 @@
                     </div>
 
 
-
                     <!-- EXPERIENCE 03 -->
 
                     <div class="timeline-item">
-
 
                         <span class="timeline-dot"></span>
 
 
                         <div class="timeline-content">
-
 
                             <span class="timeline-date">
                                 2024 — 2025
@@ -1861,18 +2245,20 @@
 
                     </div>
 
+
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
                  SKILLS
             ================================================== -->
 
-            <section class="section"
-                     id="skills">
+            <section
+                class="section"
+                id="skills">
 
 
                 <div class="section-heading">
@@ -1896,14 +2282,19 @@
                 </div>
 
 
+                <div
+                    class="skills-grid"
+                    data-stagger>
 
-                <div class="skills-grid">
 
-
-                    <div class="skill-card">
+                    <div
+                        class="skill-card tilt-card"
+                        data-tilt>
 
                         <div class="skill-icon">
+
                             <i class="fa-brands fa-python"></i>
+
                         </div>
 
                         <div>
@@ -1921,10 +2312,14 @@
                     </div>
 
 
-                    <div class="skill-card">
+                    <div
+                        class="skill-card tilt-card"
+                        data-tilt>
 
                         <div class="skill-icon">
+
                             <i class="fa-brands fa-java"></i>
+
                         </div>
 
                         <div>
@@ -1942,10 +2337,14 @@
                     </div>
 
 
-                    <div class="skill-card">
+                    <div
+                        class="skill-card tilt-card"
+                        data-tilt>
 
                         <div class="skill-icon">
+
                             <i class="fa-brands fa-js"></i>
+
                         </div>
 
                         <div>
@@ -1963,10 +2362,14 @@
                     </div>
 
 
-                    <div class="skill-card">
+                    <div
+                        class="skill-card tilt-card"
+                        data-tilt>
 
                         <div class="skill-icon">
+
                             <i class="fa-brands fa-react"></i>
+
                         </div>
 
                         <div>
@@ -1984,10 +2387,14 @@
                     </div>
 
 
-                    <div class="skill-card">
+                    <div
+                        class="skill-card tilt-card"
+                        data-tilt>
 
                         <div class="skill-icon">
+
                             <i class="fa-brands fa-node-js"></i>
+
                         </div>
 
                         <div>
@@ -2005,10 +2412,14 @@
                     </div>
 
 
-                    <div class="skill-card">
+                    <div
+                        class="skill-card tilt-card"
+                        data-tilt>
 
                         <div class="skill-icon">
+
                             <i class="fa-solid fa-database"></i>
+
                         </div>
 
                         <div>
@@ -2026,10 +2437,14 @@
                     </div>
 
 
-                    <div class="skill-card">
+                    <div
+                        class="skill-card tilt-card"
+                        data-tilt>
 
                         <div class="skill-icon">
+
                             <i class="fa-brands fa-php"></i>
+
                         </div>
 
                         <div>
@@ -2047,10 +2462,14 @@
                     </div>
 
 
-                    <div class="skill-card">
+                    <div
+                        class="skill-card tilt-card"
+                        data-tilt>
 
                         <div class="skill-icon">
+
                             <i class="fa-brands fa-git-alt"></i>
+
                         </div>
 
                         <div>
@@ -2068,10 +2487,14 @@
                     </div>
 
 
-                    <div class="skill-card">
+                    <div
+                        class="skill-card tilt-card"
+                        data-tilt>
 
                         <div class="skill-icon">
+
                             <i class="fa-solid fa-terminal"></i>
+
                         </div>
 
                         <div>
@@ -2088,18 +2511,20 @@
 
                     </div>
 
+
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
                  ACHIEVEMENTS
             ================================================== -->
 
-            <section class="section"
-                     id="achievements">
+            <section
+                class="section"
+                id="achievements">
 
 
                 <div class="section-heading">
@@ -2123,18 +2548,26 @@
                 </div>
 
 
+                <div
+                    class="achievements-grid"
+                    data-stagger>
 
-                <div class="achievements-grid">
 
-
-                    <article class="achievement-card">
+                    <article
+                        class="achievement-card tilt-card"
+                        data-tilt>
 
                         <i class="fa-solid fa-code"></i>
 
                         <div>
 
-                            <strong>
-                                250+
+                            <strong
+                                data-counter="250"
+                                data-suffix="+"
+                                data-duration="1800">
+
+                                0
+
                             </strong>
 
                             <h3>
@@ -2150,14 +2583,21 @@
                     </article>
 
 
-                    <article class="achievement-card">
+                    <article
+                        class="achievement-card tilt-card"
+                        data-tilt>
 
                         <i class="fa-solid fa-file-lines"></i>
 
                         <div>
 
-                            <strong>
-                                5+
+                            <strong
+                                data-counter="5"
+                                data-suffix="+"
+                                data-duration="1800">
+
+                                0
+
                             </strong>
 
                             <h3>
@@ -2173,14 +2613,21 @@
                     </article>
 
 
-                    <article class="achievement-card">
+                    <article
+                        class="achievement-card tilt-card"
+                        data-tilt>
 
                         <i class="fa-solid fa-graduation-cap"></i>
 
                         <div>
 
-                            <strong>
-                                50+
+                            <strong
+                                data-counter="50"
+                                data-suffix="+"
+                                data-duration="1800">
+
+                                0
+
                             </strong>
 
                             <h3>
@@ -2195,18 +2642,20 @@
 
                     </article>
 
+
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
                  CERTIFICATIONS
             ================================================== -->
 
-            <section class="section"
-                     id="certifications">
+            <section
+                class="section"
+                id="certifications">
 
 
                 <div class="section-heading">
@@ -2230,11 +2679,14 @@
                 </div>
 
 
+                <div
+                    class="certifications-grid"
+                    data-stagger>
 
-                <div class="certifications-grid">
 
-
-                    <article class="certification-card">
+                    <article
+                        class="certification-card tilt-card"
+                        data-tilt>
 
                         <div class="certification-icon">
 
@@ -2257,7 +2709,9 @@
                     </article>
 
 
-                    <article class="certification-card">
+                    <article
+                        class="certification-card tilt-card"
+                        data-tilt>
 
                         <div class="certification-icon">
 
@@ -2280,7 +2734,9 @@
                     </article>
 
 
-                    <article class="certification-card">
+                    <article
+                        class="certification-card tilt-card"
+                        data-tilt>
 
                         <div class="certification-icon">
 
@@ -2302,18 +2758,20 @@
 
                     </article>
 
+
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
                  BLOG / INSIGHTS
             ================================================== -->
 
-            <section class="section"
-                     id="blog">
+            <section
+                class="section"
+                id="blog">
 
 
                 <div class="section-heading">
@@ -2337,11 +2795,14 @@
                 </div>
 
 
+                <div
+                    class="blog-grid"
+                    data-stagger>
 
-                <div class="blog-grid">
 
-
-                    <article class="blog-card">
+                    <article
+                        class="blog-card tilt-card"
+                        data-tilt>
 
                         <span class="blog-category">
                             AI
@@ -2369,7 +2830,9 @@
                     </article>
 
 
-                    <article class="blog-card">
+                    <article
+                        class="blog-card tilt-card"
+                        data-tilt>
 
                         <span class="blog-category">
                             SOFTWARE
@@ -2397,7 +2860,9 @@
                     </article>
 
 
-                    <article class="blog-card">
+                    <article
+                        class="blog-card tilt-card"
+                        data-tilt>
 
                         <span class="blog-category">
                             RESEARCH
@@ -2424,25 +2889,26 @@
 
                     </article>
 
+
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
                  CONTACT
             ================================================== -->
 
-            <section class="section"
-                     id="contact">
+            <section
+                class="section"
+                id="contact">
 
 
                 <div class="contact-container">
 
 
                     <div class="contact-content">
-
 
                         <span class="section-kicker">
                             LET'S BUILD SOMETHING
@@ -2470,8 +2936,10 @@
                         </p>
 
 
-                        <a href="mailto:omorfarukalrashid@gmail.com"
-                           class="button button-primary">
+                        <a
+                            href="mailto:omorfarukalrashid@gmail.com"
+                            class="button button-primary"
+                            data-magnetic>
 
                             Start a Conversation
 
@@ -2482,12 +2950,14 @@
                     </div>
 
 
-
                     <div class="contact-details">
 
 
-                        <a href="mailto:omorfarukalrashid@gmail.com"
-                           class="contact-detail">
+                        <!-- EMAIL -->
+
+                        <a
+                            href="mailto:omorfarukalrashid@gmail.com"
+                            class="contact-detail">
 
                             <div class="contact-icon">
 
@@ -2510,11 +2980,13 @@
                         </a>
 
 
+                        <!-- GITHUB -->
 
-                        <a href="https://github.com/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="contact-detail">
+                        <a
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-detail">
 
                             <div class="contact-icon">
 
@@ -2537,11 +3009,13 @@
                         </a>
 
 
+                        <!-- LINKEDIN -->
 
-                        <a href="https://www.linkedin.com/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="contact-detail">
+                        <a
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-detail">
 
                             <div class="contact-icon">
 
@@ -2563,12 +3037,72 @@
 
                         </a>
 
+
+                        <!-- GOOGLE SCHOLAR -->
+
+                        <a
+                            href="https://scholar.google.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-detail">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-solid fa-graduation-cap"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    GOOGLE SCHOLAR
+                                </small>
+
+                                <strong>
+                                    Academic Profile
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- ORCID -->
+
+                        <a
+                            href="https://orcid.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-detail">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-brands fa-orcid"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    ORCID
+                                </small>
+
+                                <strong>
+                                    Researcher Profile
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+
                     </div>
+
 
                 </div>
 
-            </section>
 
+            </section>
 
 
             <!-- =================================================
@@ -2592,27 +3126,43 @@
 
 
                 <div>
-                    Software Engineer • Researcher • Founder
+
+                    Software Engineer
+                    • Researcher
+                    • Founder
+
                 </div>
 
 
-                <nav class="footer-links">
+                <nav
+                    class="footer-links"
+                    aria-label="Footer navigation">
+
 
                     <a href="#home">
                         Home
                     </a>
 
+
                     <a href="#projects">
                         Projects
                     </a>
+
 
                     <a href="#research">
                         Research
                     </a>
 
+
+                    <a href="#publications">
+                        Publications
+                    </a>
+
+
                     <a href="#contact">
                         Contact
                     </a>
+
 
                 </nav>
 
@@ -2629,13 +3179,14 @@
 
                 </div>
 
+
             </footer>
 
 
         </main>
 
-    </div>
 
+    </div>
 
 
     <!-- =====================================================
@@ -2644,33 +3195,38 @@
 
     <!-- Three.js -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
+    </script>
 
 
     <!-- GSAP -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+    </script>
 
 
     <!-- GSAP ScrollTrigger -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+    </script>
 
 
     <!-- =====================================================
-         CUSTOM JAVASCRIPT
+         PORTFOLIO JAVASCRIPT
     ====================================================== -->
 
     <script src="js/main.js"></script>
 
+    <script src="js/navigation.js"></script>
+
     <script src="js/animations.js"></script>
 
-    <script src="js/three-bg.js"></script>
+    <script src="js/theme.js"></script>
 
-    <script src="js/projects.js"></script>
+    <script src="js/three-background.js"></script>
 
 
 </body>
